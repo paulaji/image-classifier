@@ -35,7 +35,7 @@ X_val = X_val / 255
 # classes. It eliminates any potential bias that could arise due to numerical representation, ensuring that the model
 # treats all classes equally and independently.
 y_train = to_categorical(y_train, 10)
-y_train = to_categorical(y_train, 10)
+y_val = to_categorical(y_val, 10)
 
 # 2) model definition
 
