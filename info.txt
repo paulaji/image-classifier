@@ -1,6 +1,6 @@
 install these packages: pip3 install numpy matplotlib tensorflow pillow streamlit
 
 accuracy obtained while training: close to 0.5
-note: try increasing epochs count | the accuracy although not exponentially growing, saw slight increases in the last couple of trainings 
+note: try increasing epochs count | the accuracy although not exponentially growing, saw good increases in the first few training sessions and slight increases in the last couple
 
 
