@@ -6,4 +6,5 @@ after 10 epochs (or specified number), the model will be created with the name s
 accuracy obtained while training: close to 0.5
 note: try increasing epochs count | the accuracy although not exponentially growing, saw good increases in the first few training sessions and slight increases in the last couple
 
-
+after that, create a main.py file to setup the streamlit part
+to run streamlit on the browser: streamlit run main.py
