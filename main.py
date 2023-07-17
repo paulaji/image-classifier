@@ -14,6 +14,10 @@ def main():
         image = Image.open(file)
         # to actually display the image uploaded | second parameter is to correctly fit the image
         st.image(image, use_column_width=True)
+
+        # now we have to resize the image so that the ML model can take it as an input
+        # we specified the image input as 32x32 and 3 color channels in the model, therefore:
+        resized_image = image.resize((32, 32))
     else:
         st.text("Please upload an image file.")
 
