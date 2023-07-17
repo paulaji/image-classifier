@@ -1,5 +1,8 @@
 install these packages: pip3 install numpy matplotlib tensorflow pillow streamlit
 
+first, run the model.py file
+after 10 epochs (or specified number), the model will be created with the name specified in model.save() | give an h5 extension to the model name
+
 accuracy obtained while training: close to 0.5
 note: try increasing epochs count | the accuracy although not exponentially growing, saw good increases in the first few training sessions and slight increases in the last couple
 
