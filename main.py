@@ -18,6 +18,10 @@ def main():
         # now we have to resize the image so that the ML model can take it as an input
         # we specified the image input as 32x32 and 3 color channels in the model, therefore:
         resized_image = image.resize((32, 32))
+
+        # refer info.txt for explanation
+        # to normalise the resized image
+        image_array = np.array(resized_image) / 255
     else:
         st.text("Please upload an image file.")
 
