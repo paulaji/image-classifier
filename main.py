@@ -27,6 +27,16 @@ def main():
 
         # now that we have uploaded and reshaped our image for giving it as input to the model, let's load the model
         model = tf.keras.models.load_model('cifar10_model.h5')
+
+        # using the in-built predict function of tf and keras to make predictions using the model
+        predictions = model.predict(image_array)
+        cifar10_classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
+        # using matplotlib to plot bar graphs showing the confidence of prediction in each class
+        fig, ax = plt.subplots()  # fig for figure, ax for axes
+        y_pos = np.arrange(len(cifar10_classes))
+        # barh: horizontal bargraph
+        ax.barh(y_pos, predictions[0], align="center")
     else:
         st.text("Please upload an image file.")
 
