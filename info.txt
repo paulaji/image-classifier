@@ -8,3 +8,14 @@ note: try increasing epochs count | the accuracy although not exponentially grow
 
 after that, create a main.py file to setup the streamlit part
 to run streamlit on the browser: streamlit run main.py
+
+when we convert the image file into array using numpy,
+we get arrays like this
+[[[255, 0, 0], [0, 255, 0], [0, 0, 255], [255, 255, 0], [255, 0, 255]],
+ [[0, 255, 255], [128, 0, 128], [255, 255, 255], [0, 0, 0], [255, 128, 0]],
+ [[255, 255, 255], [0, 0, 0], [128, 128, 128], [64, 64, 64], [192, 192, 192]],
+ [[255, 0, 0], [0, 255, 0], [0, 0, 255], [255, 255, 0], [255, 0, 255]],
+ [[0, 255, 255], [128, 0, 128], [255, 255, 255], [0, 0, 0], [255, 128, 0]]]
+
+this is a 5x5 image - 5 pixel width and height
+we need to divide this array by 255 for normalisation
