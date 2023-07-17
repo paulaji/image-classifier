@@ -1,10 +1,4 @@
-import numpy as np  # to work with arrays
-import matplotlib.pyplot as plt  # to plot
-import streamlit as st  # to build UI
-
-from PIL import Image  # to work with images
-
-# for the actual machine learning
+# machine learning libraries needed
 import tensorflow as tf
 from keras.datasets import cifar10
 from keras.models import Sequential
