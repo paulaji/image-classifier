@@ -22,6 +22,11 @@ def main():
         # refer info.txt for explanation
         # to normalise the resized image
         image_array = np.array(resized_image) / 255
+        # now that we normalised and resized, we need the input to be in proper format, so,
+        image_array = image_array.reshape((1, 32, 32, 3))  # 1 image 32x32 size 3 color channels
+
+        # now that we have uploaded and reshaped our image for giving it as input to the model, let's load the model
+        model = tf.keras.models.load_model('cifar10_model.h5')
     else:
         st.text("Please upload an image file.")
 
