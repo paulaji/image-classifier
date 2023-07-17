@@ -10,7 +10,10 @@ def main():
 
     file = st.file_uploader("upload an image", type=['jpg', 'png'])
     if file:
+        # to recognize/read and load the file uploaded as an image into a variable image
         image = Image.open(file)
+        # to actually display the image uploaded | second parameter is to correctly fit the image
+        st.image(image, use_column_width=True)
     else:
         st.text("Please upload an image file.")
 
