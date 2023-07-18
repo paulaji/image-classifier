@@ -1,7 +1,9 @@
 Uses Tenforflow's Keras library.
 This ML project is front-end supported (streamlit).
 
+
 Image can be given as input and will be classified into their own respective categories with the help of CIFAR-10.
+The visual representation of classification is done using horizontal bargraph and Piechart.
 The CIFAR-10 dataset consists of images classified into 10 categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.
 
 
