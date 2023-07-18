@@ -58,6 +58,13 @@ def main():
         ax.set_title('Which CIFAR_10 class does your image belong to?')
 
         st.pyplot(fig)
+
+        # trying to plot a pie chart
+        predictions_flat = predictions[0]
+        fig1, ax1 = plt.subplots()
+        ax1.pie(predictions_flat, labels=cifar10_classes, autopct='%1.1f%%')
+
+        st.pyplot(fig1)
     else:
         st.text("Please upload an image file.")
 
