@@ -33,10 +33,20 @@ def main():
         cifar10_classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
         # using matplotlib to plot bar graphs showing the confidence of prediction in each class
-        fig, ax = plt.subplots()  # fig for figure, ax for axes
+        # fig for figure, ax for axes
+        fig, ax = plt.subplots()
+        # create an array of integers based on length of cifar10_classes variable => 0-9
         y_pos = np.arrange(len(cifar10_classes))
-        # barh: horizontal bargraph
+        # horizontal bar graph using bar h, y_pos represents position of each bar: here we have bars at 0, 1, 2 position
+        # all the way to 9, predictions[i] contains predictions/confidence scores of each class also it is an
+        # iterable therefore each bar will have its own prediction
         ax.barh(y_pos, predictions[0], align="center")
+        # to label each bar
+        ax.set_yticks(y_pos, labels=cifar10_classes)
+        # labels read top-to-bottom
+        ax.invert_yaxis()  
+        ax.set_xlabel('Probability')
+        ax.set_title('Which CIFAR_10 class does your image belong to?')
     else:
         st.text("Please upload an image file.")
 
