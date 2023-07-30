@@ -24,3 +24,8 @@ Adam (optimization algorithm):
 Adam (short for Adaptive Moment Estimation) is an optimization algorithm commonly used in machine learning, 
 particularly for training neural networks. It is an extension of the stochastic gradient descent (SGD) optimization 
 algorithm that combines elements of RMSprop and AdaGrad.
+
+<img src="Screenshot_1.png" alt="Screenshot 1">
+<img src="Screenshot_2.png" alt="Screenshot 2">
+<img src="Screenshot_3.png" alt="Screenshot 3">
+<img src="Screenshot_4.png" alt="Screenshot 4">
